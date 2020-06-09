@@ -94,6 +94,6 @@ $keypad.onclick = ({ target }) => {
 };
 $hitBtn.onclick = () => {
   checkNums([...$nums].map($num => +$num.textContent));
-  result[count].strikeC === nowTry ? toggleClass() : renderLog();
+  result[0].strikeC === nowTry ? toggleClass() : renderLog();
 };
 $rtBtn.onclick = window.onload;
