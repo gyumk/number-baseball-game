@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <title>숫자 야구 게임</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">숫자 야구 게임</h1>
+  </header>
+  <section class="input">
+    <ul class="enter-nums">
+      <li class="num-1"></li>
+      <li class="num-2"></li>
+      <li class="num-3"></li>
+    </ul>
+    <div class="clearfix"></div>
+  </section>
+  <section class="log">
+    <ul>
+    </ul>
+    <h2 class="active">SUCESS</h2>
+  </section>
+  <section class="keypad">
+    <form action="/try" method="GET">
+      <button type="button" class="input-num">1</button>
+      <button type="button" class="input-num">2</button>
+      <button type="button" class="input-num">3</button>
+      <button type="button" class="input-num">4</button>
+      <button type="button" class="input-num">5</button>
+      <button type="button" class="input-num">6</button>
+      <button type="button" class="input-num">7</button>
+      <button type="button" class="input-num">8</button>
+      <button type="button" class="input-num">9</button>
+      <button type="button" class="input-num">0</button>
+      <button type="button" class="del" disabled="true">DEL</button>
+      <button class="hit" type="button" disabled="true">HIT</button>
+    </form>
+  </section>
+  <button class="retry active">RETRY</button>
+</body>
+</html>
