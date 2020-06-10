@@ -1,0 +1,87 @@
+body{
+  background-color: cornflowerblue;
+  color: white;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0;
+}
+body *{
+  box-sizing: border-box;
+}
+/*모듈*/
+.clearfix{
+  clear: both;
+}
+/*레이아웃*/
+section, header{
+  width: 360px;
+}
+ul{
+  margin: 0 auto;
+}
+/*숫자 입력*/
+ul.enter-nums{
+  width: 280px;
+}
+li[class^=num]{
+  float: left;
+  font-size: 70px;
+  font-weight: bold;
+  width: 80px;
+  height: 110px;
+  text-align: center;
+  line-height: 110px;
+  background-color: white;
+  color: midnightblue;
+}
+li[class^=num]:not(:last-of-type){
+  margin-right: 20px;
+}
+ul.finish > li{
+  border: 2px solid red;
+}
+/*로그*/
+.log > ul:not(.active),
+.log > h2:not(.active),
+.keypad:not(.active),
+.retry:not(.active){
+  display : none;
+}
+section.log{
+  margin: 30px 0;
+}
+li[class^=log]{
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  background-color: lightpink;
+}
+li[class^=log]:not(:last-child){
+  margin-bottom: 20px;
+}
+.result > span:not([class^=try]){
+  color: hotpink;
+}
+span.strike::before{
+  content: 'S';
+}
+span.ball::before{
+  content: 'B';
+}
+.keypad > form{
+  display: grid;
+  grid-template: "1 2 3 4 5 DEL" 1fr
+                 "6 7 8 9 0 HIT" 1fr
+                 /2fr 2fr 2fr 2fr 2fr 3fr;
+}
+.del{
+  grid-area: DEL;
+}
+form > button{
+  font-size: 25px;
+  height: 40px;
+}
